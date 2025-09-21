@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Ensure bullet points for experience lists */
+      .timeline ul {
+        list-style-type: disc !important;
+        padding-left: 20px !important;
+      }
+      .timeline ul li {
+        margin-bottom: 10px;
+      }
+      /* Blog content truncation */
+      .blog-text p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 4.5em;
+        transition: max-height 0.3s ease;
+      }
+      .blog-text p.expanded {
+        -webkit-line-clamp: unset;
+        max-height: none;
+      }
+      .blog-text .toggle-btn {
+        color: #007bff;
+        cursor: pointer;
+        margin-top: 5px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body class="main-content">
+    <header class="container header active" id="home">
+      <div class="header-content">
+        <div class="left-header">
+          <div class="h-shape"></div>
+          <div class="image">
+            <img src="img/hero.png" alt="" />
+          </div>
+        </div>
+        <div class="right-header">
+          <h1 class="name">
+            Xin chào, Tôi là <span>Bùi Thị Hà My.</span>
+            Digital Marketing Executive.
+          </h1>
+          <p>
+            Là một sinh viên tốt nghiệp chuyên ngành Digital Marketing, trong
+            suốt khoảng thời gian học tập và thực hiện các dự án cá nhân. Tôi đã
+            có cơ hội làm quen với nhiều mảng của Digital Marketing như sáng tạo
+            nội dung, quản lý các trang mạng xã hội, chạy quảng cáo cơ bản trên
+            Facebook Ads, cũng như thiết kế hình ảnh bằng Canva và Photoshop.
+            Những trải nghiệm này đã giúp tôi rèn luyện khả năng lên kế hoạch,
+            nghiên cứu thị trường và xây dựng thương hiệu trên nền tảng số.
+          </p>
+          <div class="btn-con">
+            <a href="CV.pdf" class="main-btn">
+              <span class="btn-text">Tải CV</span>
+              <span class="btn-icon"><i class="fas fa-download"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="container about" id="about">
+        <div class="main-title">
+          <h2>Giới <span>thiệu</span><span class="bg-text">my stats</span></h2>
+        </div>
+        <div class="about-container">
+          <div class="left-about">
+            <h4>GIỚI THIỆU BẢN THÂN</h4>
+            <p>
+              Hiện tại, tôi tập trung phát triển kỹ năng Content Marketing và
+              triển khai các chiến dịch truyền thông trên Facebook, TikTok và
+              Website. Tôi thường xuyên sử dụng các công cụ hỗ trợ như Google
+              Analytics, Meta Business Suite, TikTok Ads Manager và Chat GPT để
+              phân tích insight, tối ưu hiệu quả nội dung và gia tăng mức độ
+              tương tác. Bên cạnh đó, tôi cũng rèn luyện khả năng viết SEO,
+              email marketing và social listening để nắm bắt xu hướng thị trường
+              nhanh chóng.
+              <br />
+              <br />
+              Trong tương lai, tôi đặt mục tiêu trở thành một Digital Marketer
+              toàn diện, có khả năng quản lý và triển khai các chiến dịch
+              Marketing tích hợp (IMC), kết hợp giữa sáng tạo nội dung, quảng
+              cáo đa kênh và đo lường hiệu quả. Tôi mong muốn được đồng hành
+              cùng doanh nghiệp để tạo ra những chiến dịch truyền thông bền
+              vững, đồng thời không ngừng học hỏi và cập nhật công cụ mới để
+              phát triển chuyên môn.
+            </p>
+            <div class="btn-con">
+              <a href="CV.pdf" class="main-btn">
+                <span class="btn-text">Tải CV</span>
+                <span class="btn-icon"><i class="fas fa-download"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="right-about">
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">10+</p>
+                <p class="small-text">
+                  Dự án <br />
+                  hoàn thành
+                </p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">1+</p>
+                <p class="small-text">
+                  Năm <br />
+                  kinh nghiệm
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <h4 class="stat-title">Kĩ năng</h4>
+          <div class="progress-bars">
+            <div class="progress-bar">
+              <p class="prog-title">Kỹ năng viết & biên tập nội dung</p>
+              <div class="progress-con">
+                <p class="prog-text">80%</p>
+                <div class="progress">
+                  <span class="html"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">Phân tích hành vi khách hàng – Insight</p>
+              <div class="progress-con">
+                <p class="prog-text">95%</p>
+                <div class="progress">
+                  <span class="css"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">Tư duy sáng tạo nội dung & chiến dịch</p>
+              <div class="progress-con">
+                <p class="prog-text">75%</p>
+                <div class="progress">
+                  <span class="js"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">
+                Thiết kế và edit cơ bản (Canva, Photoshop..)
+              </p>
+              <div class="progress-con">
+                <p class="prog-text">75%</p>
+                <div class="progress">
+                  <span class="react"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">Khả năng làm việc nhóm và giao tiếp</p>
+              <div class="progress-con">
+                <p class="prog-text">87%</p>
+                <div class="progress">
+                  <span class="node"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">Tiếng anh giao tiếp</p>
+              <div class="progress-con">
+                <p class="prog-text">70%</p>
+                <div class="progress">
+                  <span class="python"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 class="stat-title">Kinh nghiệm</h4>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">6/2025 - Hiện tại</p>
+            <h5>Content Marketing<span> - Thương hiệu ALOTV</span></h5>
+            <ul>
+              <li>
+                <p>
+                  Phụ trách chính nội dung, kịch bản và lịch đăng tải cho các
+                  kênh TikTok, Facebook về bất động sản
+                </p>
+              </li>
+              <li>
+                <p>Đạt >25.000 lượt xem video trong 2 tháng</p>
+              </li>
+              <li>
+                <p>
+                  Trực tiếp quay video giới thiệu sản phẩm, nhà mẫu, phân cảnh
+                  hài–giải trí
+                </p>
+              </li>
+              <li>
+                <p>
+                  Tham gia làm talent, dẫn dắt nội dung video ngắn, vlog, video
+                  review
+                </p>
+              </li>
+              <li>
+                <p>
+                  Tư vấn, chăm sóc khách hàng qua tin nhắn, zalo, fanpage,
+                  Tiktok.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">12/2024 - 4/2025</p>
+            <h5>Accountant<span> - CTY TNHH Vận Tải Huy Bảo Phát.</span></h5>
+            <ul>
+              <li>
+                <p>Nhập liệu hóa đơn, chứng từ, kiểm tra đối chiếu sổ sách</p>
+              </li>
+              <li>
+                <p>Lập bảng lương, bảng kê vận chuyển hàng hóa định kỳ</p>
+              </li>
+              <li>
+                <p>Theo dõi công nợ khách hàng, hỗ trợ kế toán tổng hợp</p>
+              </li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">8/2024 - 11/2024</p>
+            <h5>Internship Content Marketing<span> - CTY CP DEVITECH</span></h5>
+            <ul>
+              <li>
+                <p>
+                  Viết bài quảng bá sản phẩm ( 2 -3 bài /tuần trên nền tảng
+                  Facebook, website mỗi ngày 1 nội dung )
+                </p>
+              </li>
+              <li>
+                <p>
+                  Nghiên cứu từ khóa, đề xuất ý tưởng bài viết theo từng chiến
+                  dịch
+                </p>
+              </li>
+              <li>
+                <p>
+                  Xây dựng nội dung Blog & Website Tối ưu SEO onpage, phân tích
+                  hiệu quả nội dung theo tuần
+                </p>
+              </li>
+              <li>
+                <p>
+                  Hỗ trợ lên nội dung & thiết kế slide giới thiệu sản phẩm/dịch
+                  vụ
+                </p>
+              </li>
+              <li>
+                <p>
+                  Hỗ trợ lên kế hoạch chạy quảng cáo cơ bản(đối tượng, ngân
+                  sách)
+                </p>
+              </li>
+              <li>
+                <p>
+                  Tổng hợp insight khách hàng từ tương tác để điều chỉnh nội
+                  dung
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">7/2024 - 8/2024</p>
+            <h5>Member <span> - Thiện Nguyện "Ánh Sáng Hy Vọng"</span></h5>
+            <ul>
+              <li>
+                <p>
+                  Tham gia các hoạt động thiện nguyện, quyên góp và hỗ trợ
+                  cộng đồng
+                </p>
+              </li>
+              <li>
+                <p>
+                  Hỗ trợ tổ chức sự kiện, vận động tài trợ và truyền thông cho
+                  các chương trình của nhóm
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">11/2013 - 12/2024</p>
+            <h5>Co-founder , Project Manager<span> - Piny Store</span></h5>
+            <ul>
+              <li>
+                <p>
+                  Lập kế hoạch & điều phối đội nhóm 5 người triển khai đa nền tảng
+                </p>
+              </li>
+              <li>
+                <p>
+                  Nghiên cứu đối thủ, tìm insight khách hàng Quản lý Fanpage (tăng
+                  300 follow sau 2 tháng, tăng 30% lượt tương tác (Facebook,
+                  TikTok).
+                </p>
+              </li>
+              <li>
+                <p>
+                  Viết bài SEO (5–10 bài/tháng) & content social (10–15
+                  bài/tháng)
+                </p>
+              </li>
+              <li>
+                <p>
+                  Thiết kế bài đăng bằng Canva, kết hợp nội dung giải trí
+                  + bán hàng
+                </p>
+              </li>
+              <li>
+                <p>
+                  Đề xuất ý tưởng, thực hiện nội dung video cho TikTok
+                </p>
+              </li>
+              <li>
+                <p>
+                  Chạy thử quảng cáo Facebook cơ bản (ngân sách nhỏ)
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">2022 - 2025</p>
+            <h5>Digital Marketing<span> - Cao Đẳng FPT Polytechnic</span></h5>
+            <p>GPA: 3.5/4</p>
+          </div>
+        </div>
+      </section>
+      <section class="container" id="portfolio">
+        <div class="main-title">
+          <h2>Dự <span>Án</span><span class="bg-text">Cá Nhân</span></h2>
+        </div>
+        <p class="port-text">
+          Đây là một số dự án cá nhân mà tôi đã thực hiện trong quá trình học tập và phát triển kỹ năng Digital Marketing của mình. Mỗi dự án đều mang lại những trải nghiệm quý giá và giúp tôi nâng cao khả năng sáng tạo, phân tích và triển khai các chiến dịch truyền thông hiệu quả.
+        </p>
+        <div class="portfolios">
+          <div class="portfolio-item">
+            <div class="image">
+              <img src="img/port1.jpg" alt="" />
+            </div>
+            <div class="hover-items">
+              <h3>Piny Store</h3>
+              <div class="icons">
+                <a href="https://www.tiktok.com/@pinystore/video/7427695463639371016" class="icon">
+                  <i class="fab fa-tiktok"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image">
+              <img src="img/port2.jpg" alt="" />
+            </div>
+            <div class="hover-items">
+              <h3>Piny Store</h3>
+              <div class="icons">
+                <a href="https://www.tiktok.com/@pinystore/video/7427074168383966482" class="icon">
+                  <i class="fab fa-tiktok"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image">
+              <img src="img/port3.jpg" alt="" />
+            </div>
+            <div class="hover-items">
+              <h3>AloTV Homes</h3>
+              <div class="icons">
+                <a href="https://www.tiktok.com/@alotv.homes/video/7525391065113808146" class="icon">
+                  <i class="fab fa-tiktok"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image">
+              <img src="img/port4.jpg" alt="" />
+            </div>
+            <div class="hover-items">
+              <h3>AloTV Homes</h3>
+              <div class="icons">
+                <a href="https://www.tiktok.com/@alotv.homes/video/7536928225528696072" class="icon">
+                  <i class="fab fa-tiktok"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image">
+              <img src="img/port5.jpg" alt="" />
+            </div>
+            <div class="hover-items">
+              <h3>AloTV Homes</h3>
+              <div class="icons">
+                <a href="https://www.tiktok.com/@alotv.homes/video/7528413216259476743?_r=1&_t=ZS-8zpbXfXhw7F" class="icon">
+                  <i class="fab fa-tiktok"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container" id="blogs">
+        <div class="blogs-content">
+          <div class="main-title">
+            <h2>Bài <span>Viết</span><span class="bg-text">My Blogs</span></h2>
+          </div>
+          <div class="blogs">
+            <div class="blog">
+              <img src="img/port6.jpg" alt="" />
+              <div class="blog-text">
+                <h4>💢Điều gì khiến "Gấu bông" của nhà Piny trở nên đặc biệt hơn các dòng gấu bông khác? ⁉️</h4>
+                <p>
+                  ✨Gấu bông, món quà quen thuộc nhưng chưa bao giờ hết hot. Thế nhưng, điều gì khiến gấu bông Piny trở nên đặc biệt hơn so với hàng ngàn chú gấu bông khác trên thị trường?🧸💕
+✨Gấu bông Piny - Khi công nghệ kết hợp với sự đáng yêu. Bạn đã dễ dàng gửi lời tỏ tình với người ấy, làm quen một cách dễ dàng, gửi lời thân thương đến người thương, thần tượng,... Chỉ cần "một lần chạm" nhẹ, đối phương đã cảm nhận được hết sự chân thành của bạn. 💕💕
+✨Mỗi sản phẩm "Gấu bông kết nối" từ nhà Piny đều được thiết kế độc quyền theo yêu cầu của bạn. Hãy thử ngay để không bỏ lỡ những khoảnh khắc đáng yêu này nhé🥰🎀
+                </p>
+                <span class="toggle-btn">Xem thêm</span>
+              </div>
+            </div>
+            <div class="blog">
+              <img src="img/blog1.jpg" alt="" />
+              <div class="blog-text">
+                <h4>💥𝐒𝐀𝐋𝐄 𝐍𝐆𝐀̀𝐘 Đ𝐎̂𝐈 - 𝐁𝐀̣̂𝐓 𝐃𝐄𝐀𝐋 𝐓𝐔̛𝐍𝐆 𝐁𝐔̛̀𝐍𝐆 𝐂𝐔̀𝐍𝐆 𝐏𝐈𝐍𝐘 💥</h4>
+                <p>
+                 --------------------------------------------------
+✨Đến hẹn lại lên, Piny tung deal sốc nhân dịp 𝐒𝐀𝐋𝐄 𝐋𝐎̛́𝐍 𝟏𝟏.𝟏𝟏.!! Ngàn deal bất ngờ, giá sốc ngày đôi đang chờ bạn khám phá!🎁
+🎀Hỡi các tình yêu đang săn đón "𝑮𝒂̂́𝒖 𝒃𝒐̂𝒏𝒈 𝒌𝒆̂́𝒕 𝒏𝒐̂́𝒊". Đây là cơ hội vàng để các bạn sắm ngay cho mình một em "𝑮𝒂̂́𝒖 𝒃𝒐̂𝒏𝒈 𝒌𝒆̂́𝒕 𝒏𝒐̂́𝒊" siêu độc đáo với giá siêuuu ưu đãi.💕
+Với các ưu đãi cực khủng đến từ nhà 𝑷𝒊𝒏𝒚:
+💥Sale off lên đến 𝟓𝟎% các mặt hàng "Gấu bông kết nối"
+💥Mã giảm giá freeship cho đơn từ 𝟐𝟗𝟗𝐊
+💥𝐌𝐮𝐚 𝟏 đ𝐮̛𝐨̛̣𝐜 𝟐: Tặng 1 𝒕𝒖́𝒊 𝒎𝒖̀ đi kèm khi mua bất kì 1 sản phẩm - 𝐃𝐮𝐲 𝐧𝐡𝐚̂́𝐭 𝐭𝐫𝐨𝐧𝐠 𝐩𝐡𝐢𝐞̂𝐧 𝐬𝐚𝐥𝐞 𝟏𝟏.𝟏𝟏 – 𝑵𝒉𝒂𝒏𝒉 𝒕𝒂𝒚 𝒔𝒐̂́ 𝒍𝒖̛𝒐̛̣𝒏𝒈 𝒄𝒐́ 𝒉𝒂̣𝒏
+                </p>
+                <span class="toggle-btn">Xem thêm</span>
+              </div>
+            </div>
+            <div class="blog">
+              <img src="img/blog2.jpg" alt="" />
+              <div class="blog-text">
+                <h4>🌟 CHỮ KÍ EMAIL CHUYÊN NGHIỆP - TẠO SỰ CHUYÊN NGHIỆP TRONG MẮT ĐỐI TÁC 🌟 </h4>
+                <p>
+                 ❓❓Bạn có biết rằng chữ ký email của bạn là một ấn tượng đầu tiên vô cùng quan trọng? Một chữ ký chuyên nghiệp không chỉ giúp bạn tạo dựng hình ảnh chuyên nghiệp mà còn tăng tính đáng tin cậy cho khách hàng đối với doanh nghiệp.
+🌟Chữ ký email là phần thông tin bao gồm tên, chức danh, thông tin liên hệ (số điện thoại, email, website), logo công ty và các liên kết đến các trang mạng xã hội, thường đặt ở cuối mỗi email. Hơn thế, chữ ký email còn như một tấm danh thiếp điện tử, giúp bạn giới thiệu bản thân và doanh nghiệp một cách chuyên nghiệp.
+📌Những lợi ích mà chữ kí Email chuyên nghiệp mang đến cho doanh nghiệp của bạn:
+- Tạo dựng lòng tin với khách hàng
+- Nâng cao nhận diện thương hiệu
+- Tăng tính chuyên nghiệp cho doanh nghiệp
+- Có thể được sử dụng để quảng bá các sản phẩm, dịch vụ hoặc các chiến dịch marketing của doanh nghiệp.
+                </p>
+                <span class="toggle-btn">Xem thêm</span>
+              </div>
+            </div>
+            <div class="blog">
+              <img src="img/blog3.jpg" alt="" />
+              <div class="blog-text">
+                <h4>🌟TAM PHÁT x DEVITECH 🌟</h4>
+                <p>
+                 🔰 Dự án: Thiết kế bộ nhận diện thương hiệu
+⚡️ DEVITECH rất vui vì đã có cơ hội được đồng hành trong công cuộc xây dựng bộ thương hiệu cho Công Ty TNHH Thương Mại Dịch Vụ Kỹ Thuật Điện Tam Phát.
+🔰 Tam Phát là một công ty được thành lập với sự hội tụ của đội ngũ kỹ sư dày dặn kinh nghiệm từ các thương hiệu hàng đầu như Schneider, Siemens, ABB, Mitsubishi,... Cung cấp các giải pháp giám sát online, thiết bị, lắp đặt những dự án mới, cung cấp các dịch vụ và vật tư điện lực chất lượng cao... Với sứ mệnh đem đến sự an tâm cho doanh nghiệp và độ tin cậy cho hệ thống. Tam Phát quyết định thay đổi bộ nhận diện thương hiệu nhằm khẳng định độ uy tín và giá trị thương hiệu đến cho khách hàng.
+🌟Đội ngũ Devitech vô cùng vinh dự khi được đồng 
+                </p>
+                <span class="toggle-btn">Xem thêm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container contact" id="contact">
+        <div class="contact-container">
+          <div class="main-title">
+            <h2>Liên <span>Hệ</span><span class="bg-text">Contact</span></h2>
+          </div>
+          <div class="contact-content-con">
+            <div class="left-contact">
+              <h4>Liên hệ tôi!</h4>
+              <p>
+                Phía dưới là các thông tin liên hệ của tôi. Rất mong nhận được phản hồi từ bạn!
+              </p>
+              <div class="contact-info">
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Địa chỉ</span>
+                  </div>
+                  <p>: Gò Vấp, TP. Hồ Chí Minh</p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                  </div>
+                  <p>
+                    <span>: buithihamy62@gmail.com</span>
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-user-graduate"></i>
+                    <span>Số điện thoại</span>
+                  </div>
+                  <p>
+                    <span>: 0388 501 885</span>
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-globe-africa"></i>
+                    <span>Ngôn ngữ</span>
+                  </div>
+                  <p>
+                    <span>: English, Việt Nam</span>
+                  </p>
+                </div>
+              </div>
+              <div class="contact-icons">
+                <div class="contact-icon">
+                  <a href="www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="right-contact">
+              <form action="" class="contact-form">
+                <div class="input-control i-c-2">
+                  <input type="text" required placeholder="YOUR NAME" />
+                  <input type="email" required placeholder="YOUR EMAIL" />
+                </div>
+                <div class="input-control">
+                  <input type="text" required placeholder="ENTER SUBJECT" />
+                </div>
+                <div class="input-control">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="15"
+                    rows="8"
+                    placeholder="Message Here..."
+                  ></textarea>
+                </div>
+                <div class="submit-btn">
+                  <a href="CV.pdf" class="main-btn">
+                    <span class="btn-text">Tải CV</span>
+                    <span class="btn-icon"
+                      ><i class="fas fa-download"></i
+                    ></span>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="controls">
+      <div class="control active-btn" data-id="home">
+        <i class="fas fa-home"></i>
+      </div>
+      <div class="control" data-id="about">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="control" data-id="portfolio">
+        <i class="fas fa-briefcase"></i>
+      </div>
+      <div class="control" data-id="blogs">
+        <i class="far fa-newspaper"></i>
+      </div>
+      <div class="control" data-id="contact">
+        <i class="fas fa-envelope-open"></i>
+      </div>
+    </div>
+    <div class="theme-btn">
+      <i class="fas fa-adjust"></i>
+    </div>
+    <script src="app.js"></script>
+    <script>
+      document.querySelectorAll('.toggle-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const blogText = btn.previousElementSibling;
+          blogText.classList.toggle('expanded');
+          btn.textContent = blogText.classList.contains('expanded') ? 'Thu gọn' : 'Xem thêm';
+        });
+      });
+    </script>
+  </body>
+</html>
