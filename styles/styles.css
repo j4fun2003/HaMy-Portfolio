@@ -959,6 +959,10 @@ section {
       0 0 30px rgba(var(--color-secondary-rgb, 39, 174, 96), 0.4);
   }
 
+    .light-mode .header-content .right-header {
+    background:#fff9fc7d;
+  }
+
   .light-mode header.active::before {
     border: 12px solid var(--color-secondary);
     background-color: rgba(var(--color-secondary-rgb, 245, 102, 146), 0.2);
