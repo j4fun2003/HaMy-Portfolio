@@ -909,7 +909,7 @@ section {
 @media screen and (max-width: 970px) {
   header.active {
     background-image: url('../img/remove.png') !important;
-    background-size: auto 90%;
+    background-size: auto 80%;
     background-position: center;
     background-repeat: no-repeat;
     background-color: var(--color-primary);
